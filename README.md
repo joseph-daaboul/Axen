@@ -1,22 +1,22 @@
-**AXEN – AI Mental Wellbeing Platform for Athletes**
+# AXEN – AI Mental Wellbeing Platform for Athletes
 
-**Overview**
+## Overview
 
 AXEN is a full-stack web application designed to support athletes’ mental wellbeing through structured exercises, routine tracking, and AI-assisted guidance. The system provides users with tools to manage their mental state, build habits, and receive real-time support via an integrated chatbot.
 
 ---
 
-**Technologies Used**
+## Technologies Used
 
-**Frontend:** React (JavaScript), Tailwind CSS
-**Backend / Database:** Firebase (Authentication & Firestore)
-**AI Integration:** Google Gemini API
-**Routing:** React Router
-**Data Visualisation:** Recharts
+* **Frontend:** React (JavaScript), Tailwind CSS
+* **Backend / Database:** Firebase (Authentication & Firestore)
+* **AI Integration:** Google Gemini API
+* **Routing:** React Router
+* **Data Visualisation:** Recharts
 
 ---
 
-**Project Structure**
+## Project Structure
 
 The project follows a modular architecture:
 
@@ -29,7 +29,7 @@ The project follows a modular architecture:
 
 ---
 
-**Installation Instructions**
+## Installation Instructions
 
 1. Clone or extract the project folder
 2. Open a terminal in the project directory
