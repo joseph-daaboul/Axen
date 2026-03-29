@@ -90,7 +90,7 @@ Markers must configure the following:
 
 A deployed version of the application is available at:
 
-**[Insert your Vercel URL here]**
+https://axen-jk13.vercel.app/
 
 ---
 
