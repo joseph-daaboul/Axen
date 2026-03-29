@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+**AXEN – AI Mental Wellbeing Platform for Athletes**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Overview**
 
-## Available Scripts
+AXEN is a full-stack web application designed to support athletes’ mental wellbeing through structured exercises, routine tracking, and AI-assisted guidance. The system provides users with tools to manage their mental state, build habits, and receive real-time support via an integrated chatbot.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+**Technologies Used**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Frontend:** React (JavaScript), Tailwind CSS
+**Backend / Database:** Firebase (Authentication & Firestore)
+**AI Integration:** Google Gemini API
+**Routing:** React Router
+**Data Visualisation:** Recharts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+**Project Structure**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project follows a modular architecture:
 
-### `npm run build`
+* `src/components/` – Reusable UI components (Navbar, ProtectedRoute, etc.)
+* `src/pages/` – Main application pages (Dashboard, Exercises, Routine, Chatbot, etc.)
+* `src/services/` – Service layer for handling external APIs and logic
+* `src/firebase/` – Firebase configuration and setup
+* `src/data/` – Static data (e.g., exercises)
+* `api/` – Backend API endpoint for chatbot communication
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Installation Instructions**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone or extract the project folder
+2. Open a terminal in the project directory
+3. Install dependencies:
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Open the application in your browser at:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```id="p0a5qk"
+http://localhost:5173
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Environment Configuration
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project requires external services to run correctly.
 
-### Code Splitting
+Markers must configure the following:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* **Firebase Configuration**
 
-### Analyzing the Bundle Size
+  * Create a Firebase project
+  * Enable Authentication (Email/Password)
+  * Enable Firestore Database
+  * Replace the configuration inside `src/firebase/firebase.js`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* **Gemini API Key**
 
-### Making a Progressive Web App
+  * Obtain an API key from Google AI Studio
+  * Store the key in an environment variable or configuration file
+  * Ensure the chatbot service can access this key
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## How to Use / Test the System
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Register a new user account
+2. Log in using your credentials
+3. Navigate through the dashboard
+4. Use the chatbot for AI-based guidance
+5. Complete exercises and track progress
+6. Create and manage routines
+7. View summary statistics and activity data
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Hosted Version
 
-### `npm run build` fails to minify
+A deployed version of the application is available at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**[Insert your Vercel URL here]**
+
+---
+
+## Notes
+
+* The application is designed for demonstration and educational purposes
+* Sensitive data such as API keys and credentials are not included in this submission
+* Some features may require proper configuration of Firebase and external APIs
+
+---
+
+## Author
+
+Developed as part of a Final Year Project.
